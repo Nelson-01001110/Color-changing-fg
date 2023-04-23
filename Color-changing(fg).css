@@ -1,0 +1,38 @@
+/*background color(unimportant)*/
+body{
+    background-color: black;
+}
+#container{
+    /* For text position(unimportant)*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#cc{
+   /*Background color animation(important)*/
+   animation: cc 10s ease-in-out;
+   /*For infinite loop(important)*/
+   animation-iteration-count: infinite;
+}
+
+/*Defining CSS animation(important)*/
+@keyframes cc {
+    /*Process*/
+    0%{
+        color: #CDEAC0;
+    }
+    25%{
+        color: #EFE9AE;
+    }
+    50%{
+        color: #FEC3A6;
+    }
+    75%{
+        color: #FF928B;
+    }
+    100%{
+        color: #CDEAC0;
+    }
+}
